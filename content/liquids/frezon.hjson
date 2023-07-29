@@ -1,0 +1,10 @@
+// Газы не могут быть охладителями, поэтому мы заменяем это на отдельные параметры, присущие газам
+// gas: true
+boilPoint: -1
+heatCapacity: 3
+temperature: 0.1
+effect: freezing
+coolant: true
+color: 3a758c99
+gasColor: 3a758c99
+barColor: 3a758cff

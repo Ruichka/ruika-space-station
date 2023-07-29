@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 2
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawRegion
+			suffix: "-bottom"
+		},
+		{
+			type: DrawLiquidRegion
+			drawLiquid: plasma-gas
+			suffix: "-liquid"
+		},
+		{
+			type: DrawLiquidRegion
+			drawLiquid: tritium
+			suffix: "-liquid"
+		},
+		{
+			type: DrawDefault
+		}
+	]
+}
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 60
+craftEffect: none
+category: crafting
+outputLiquid: tritium/0.1
+consumes: {
+	power: 12
+	items: [graphite/2]
+	liquids: [plasma-gas/0.2]
+}
+requirements: [
+	titanium/150,
+	adv-matter-bin/50,
+	scanning-module/50
+]

@@ -1,0 +1,67 @@
+type: multicraft.MultiCrafter
+size: 2
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawDefault
+		}
+	]
+}
+hasPower: true
+hasItems: true
+craftEffect: smeltsmoke
+category: crafting
+menu: Simple
+recipes: 
+[
+	{
+	  input: {
+		power: 3
+		items: [
+			copper/2
+			silicon/1
+		]
+	  }
+	  output: {
+		items: [
+			ruika-space-station-capacitor/1
+		]
+	  }
+	  craftTime: 60.0
+	},
+	{
+	  input: {
+		power: 3
+		items: [
+			graphite/2
+			silicon/2
+		]
+	  }
+	  output: {
+		items: [
+			ruika-space-station-scanning-module/1
+		]
+	  }
+	  craftTime: 60.0
+	},
+	{
+	  input: {
+		power: 3
+		items: [
+			metaglass/2
+			silicon/2
+		]
+	  }
+	  output: {
+		items: [
+			ruika-space-station-matter-bin/1
+		]
+	  }
+	  craftTime: 60.0
+	}
+]
+requirements: [
+	titanium/250,
+	silicon/100
+]

@@ -1,0 +1,75 @@
+type: ItemTurret
+health: 2500
+size: 3
+
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawTurret
+		}
+	]
+}
+
+hasItems: true
+hasLiquids: true
+targetAir: false
+range: 360
+reload: 150
+inaccuracy: 0.5
+shootCone: 5
+shootSound: artillery
+shootEffect: shootTitan
+smokeEffect: shootSmokeTitan
+hitSound: titanExplosion
+coolant: {
+	type: "ConsumeCoolant"
+}
+coolantMultiplier: 0.5
+ammoTypes: {
+	tritium-bomb: {
+		type: ArtilleryBulletType
+		speed: 3
+		damage: 800
+		splashDamage: 800
+		splashDamageRadius: 24
+		knockback: 0.8
+		lifeTime: 120
+		collidesTiles: false
+		hitEffect: blastExplosion
+		width: 20
+		height: 20
+		buildingDamageMultiplier: 0.2
+		status: melting
+		statusDuration: 300
+		ammoMultiplier: 1
+		frontColor: 13ff4b
+		backColor: 03ef3b
+	},
+	frezon-bomb: {
+		type: ArtilleryBulletType
+		speed: 3
+		damage: 150
+		splashDamage: 150
+		splashDamageRadius: 64
+		knockback: 0.5
+		lifeTime: 120
+		collidesTiles: false
+		hitEffect: sapExplosion
+		width: 20
+		height: 20
+		buildingDamageMultiplier: 0.1
+		status: freezing
+		statusDuration: 1800
+		ammoMultiplier: 1
+		frontColor: 3a758c
+		backColor: 2a657c
+	}
+}
+category: turret
+requirements: [
+	titanium/300,
+	adv-capacitor/100
+	adv-matter-bin/100,
+	adv-scanning-module/50
+]

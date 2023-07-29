@@ -1,0 +1,8 @@
+name: "ruika-space-station"
+displayName: "Space Station"
+author: Ruika
+description: "SS13 теперь в вашей минде"
+version: "0.1"
+minGameVersion: "145.1"
+dependencies: ["multi-crafter"]
+hidden: false

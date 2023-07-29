@@ -1,0 +1,42 @@
+type: ContinuousLiquidTurret
+health: 1500
+size: 3
+
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawTurret
+		}
+	]
+}
+
+hasLiquids: true
+liquidConsumed: 0.5
+targetInterval: 3
+targetUnderBlocks: false
+range: 200
+loopSound: torch
+shootSound: none
+loopSoundVolume: 1
+ammoTypes: {
+	plasma-gas: {
+		type: ContinuousFlameBulletType
+		damage: 75
+		length: 200
+		pierceCap: 2
+		buildingDamageMultiplier: 0.2
+		colors: [f7b4ee, ffffff]
+		status: burning
+		statusDuration: 600
+		ammoMultiplier: 1
+	}
+}
+category: turret
+requirements: [
+	titanium/200,
+	adv-capacitor/50
+	adv-matter-bin/50,
+	adv-scanning-module/50
+]
+shootY: 0

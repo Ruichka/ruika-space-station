@@ -1,0 +1,30 @@
+type: ConsumeGenerator
+health: 240
+size: 2
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+			type: DrawDefault
+		},
+		{
+			type: DrawWarmupRegion
+			color: f7b4ee
+		}
+	]
+}
+hasPower: true
+hasItems: true
+itemDuration: 600
+powerProduction: 8
+drawSmelter: true
+generateEffect: generatespark
+category: power
+consumes: {
+	items: [plasma-sheet/1]
+}
+requirements: [
+	titanium/200,
+	matter-bin/50,
+	adv-capacitor/50,
+]
