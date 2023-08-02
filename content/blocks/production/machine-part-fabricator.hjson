@@ -17,46 +17,46 @@ recipes:
 [
   {
     input: {
-    power: 3
-    items: [
-      copper/2
-      silicon/1
-    ]
+      power: 3
+      items: [
+        copper/2
+        silicon/1
+      ]
     }
     output: {
-    items: [
-      ruika-space-station-capacitor/1
-    ]
+      items: [
+        ruika-space-station-capacitor/1
+      ]
     }
     craftTime: 60.0
   },
   {
     input: {
-    power: 3
-    items: [
-      graphite/2
-      silicon/2
-    ]
+      power: 3
+      items: [
+        graphite/2
+        silicon/2
+      ]
     }
     output: {
-    items: [
-      ruika-space-station-scanning-module/1
-    ]
+      items: [
+        ruika-space-station-scanning-module/1
+      ]
     }
     craftTime: 60.0
   },
   {
     input: {
-    power: 3
-    items: [
-      metaglass/2
-      silicon/2
-    ]
+      power: 3
+      items: [
+        metaglass/2
+        silicon/2
+      ]
     }
     output: {
-    items: [
-      ruika-space-station-matter-bin/1
-    ]
+      items: [
+        ruika-space-station-matter-bin/1
+      ]
     }
     craftTime: 60.0
   }
