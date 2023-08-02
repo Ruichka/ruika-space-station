@@ -1,0 +1,87 @@
+type: multicraft.MultiCrafter
+size: 3
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: tritium
+      suffix: "-liquid"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: frezon
+      suffix: "-liquid"
+    },
+    {
+      type: DrawDefault
+    },
+    {
+      type: multicraft.DrawRecipe
+      defaultDrawer: 0
+      drawers: [
+        {
+          type: DrawRegion
+          suffix: -1
+        },
+        {
+          type: DrawRegion
+          suffix: -2
+        },
+      ]
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftEffect: smeltsmoke
+category: crafting
+menu: Simple
+recipes: 
+[
+  {
+    input: {
+      power: 2
+      items: [
+        ruika-space-station-adv-matter-bin/1
+      ]
+      liquids: [
+        ruika-space-station-tritium/0.2
+      ]
+    }
+    output: {
+      items: [
+        ruika-space-station-tritium-bomb/1
+      ]
+    }
+    craftTime: 120.0
+  },
+  {
+    input: {
+      power: 2
+      items: [
+        ruika-space-station-adv-matter-bin/1
+      ]
+      liquids: [
+        ruika-space-station-frezon/0.2
+      ]
+    }
+    output: {
+      items: [
+        ruika-space-station-frezon-bomb/1
+      ]
+    }
+    craftTime: 120.0
+  }
+]
+requirements: [
+  titanium/400,
+  adv-capacitor/25,
+  adv-matter-bin/50,
+  adv-scanning-module/100
+]

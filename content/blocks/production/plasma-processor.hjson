@@ -1,26 +1,26 @@
 type: GenericCrafter
 size: 1
 drawer: {
-	type: DrawMulti
-	drawers: [
-		{
-			type: DrawRegion
-			suffix: "-bottom"
-		},
-		{
-			type: DrawLiquidRegion
-			drawLiquid: water
-			suffix: "-liquid"
-		},
-		{
-			type: DrawLiquidRegion
-			drawLiquid: plasma-gas
-			suffix: "-liquid"
-		},
-		{
-			type: DrawDefault
-		}
-	]
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: water
+      suffix: "-liquid"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: plasma-gas
+      suffix: "-liquid"
+    },
+    {
+      type: DrawDefault
+    }
+  ]
 }
 hasPower: true
 hasItems: true
@@ -30,11 +30,11 @@ craftEffect: none
 category: crafting
 outputLiquid: plasma-gas/0.2
 consumes: {
-	power: 2
-	items: [plasma-sheet/1]
-	liquids: [water/0.2]
+  power: 2
+  items: [plasma-sheet/1]
+  liquids: [water/0.2]
 }
 requirements: [
-	titanium/40,
-	matter-bin/20
+  titanium/40,
+  matter-bin/20
 ]

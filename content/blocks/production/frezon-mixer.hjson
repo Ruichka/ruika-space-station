@@ -1,26 +1,26 @@
 type: GenericCrafter
 size: 2
 drawer: {
-	type: DrawMulti
-	drawers: [
-		{
-			type: DrawRegion
-			suffix: "-bottom"
-		},
-		{
-			type: DrawLiquidRegion
-			drawLiquid: tritium
-			suffix: "-liquid"
-		},
-		{
-			type: DrawLiquidRegion
-			drawLiquid: frezon
-			suffix: "-liquid"
-		},
-		{
-			type: DrawDefault
-		}
-	]
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: tritium
+      suffix: "-liquid"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: frezon
+      suffix: "-liquid"
+    },
+    {
+      type: DrawDefault
+    }
+  ]
 }
 hasPower: true
 hasItems: true
@@ -30,12 +30,12 @@ craftEffect: none
 category: crafting
 outputLiquid: frezon/0.4
 consumes: {
-	power: 12
-	items: [metaglass/4, titanium/2, thorium/2]
-	liquids: [tritium/0.1]
+  power: 12
+  items: [metaglass/4, titanium/2, thorium/2]
+  liquids: [tritium/0.1]
 }
 requirements: [
-	titanium/250,
-	adv-matter-bin/100,
-	adv-scanning-module/50
+  titanium/250,
+  adv-matter-bin/100,
+  adv-scanning-module/50
 ]

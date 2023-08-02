@@ -1,19 +1,19 @@
 type: GenericCrafter
 size: 2
 drawer: {
-	type: DrawMulti
-	drawers: [
-		{
-			type: DrawDefault
-		},
-		{
-			type: DrawGlowRegion
-			suffix: "-top"
-			color: f7b4ee
-			glowIntensity: 0.25
-			glowScale: 5
-		}
-	]
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    },
+    {
+      type: DrawGlowRegion
+      suffix: "-top"
+      color: f7b4ee
+      glowIntensity: 0.25
+      glowScale: 5
+    }
+  ]
 }
 hasPower: true
 hasItems: true
@@ -24,12 +24,12 @@ craftEffect: smeltsmoke
 category: crafting
 outputItem: plasma-sheet/1
 consumes: {
-	power: 6
-	items: [plasma-ore/1]
-	liquids: [cryofluid/0.1]
+  power: 6
+  items: [plasma-ore/1]
+  liquids: [cryofluid/0.1]
 }
 requirements: [
-	titanium/100,
-	matter-bin/20,
-	capacitor/20
+  titanium/100,
+  matter-bin/20,
+  capacitor/20
 ]
