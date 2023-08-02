@@ -50,7 +50,7 @@ recipes:
       items: [
         ruika-space-station-adv-matter-bin/1
       ]
-      liquids: [
+      fluids: [
         ruika-space-station-tritium/0.2
       ]
     }
@@ -67,7 +67,7 @@ recipes:
       items: [
         ruika-space-station-adv-matter-bin/1
       ]
-      liquids: [
+      fluids: [
         ruika-space-station-frezon/0.2
       ]
     }
@@ -81,7 +81,7 @@ recipes:
 ]
 requirements: [
   titanium/400,
-  adv-capacitor/25,
+  adv-capacitor/50,
   adv-matter-bin/50,
   adv-scanning-module/100
 ]
