@@ -1,0 +1,89 @@
+type: multicraft.MultiCrafter
+size: 2
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    },
+    {
+      type: DrawLiquidRegion
+      drawLiquid: plasma-gas
+      suffix: "-liquid"
+    },
+    {
+      type: DrawDefault
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftEffect: none
+category: crafting
+menu: Simple
+recipes: 
+[
+  {
+    input: {
+      power: 3
+      items: [
+        ruika-space-station-capacitor/1
+        thorium/1
+      ]
+      fluids: [
+        ruika-space-station-plasma-gas/0.5
+      ]
+    }
+    output: {
+      items: [
+        ruika-space-station-adv-capacitor/1
+      ]
+    }
+    craftTime: 120.0
+  },
+  {
+    input: {
+      power: 3
+      items: [
+        ruika-space-station-scanning-module/1
+        phase-fabric/2
+      ]
+      fluids: [
+        ruika-space-station-plasma-gas/0.5
+      ]
+    }
+    output: {
+      items: [
+        ruika-space-station-adv-scanning-module/1
+      ]
+    }
+    craftTime: 120.0
+  },
+  {
+    input: {
+      power: 3
+      items: [
+        ruika-space-station-matter-bin/1
+        plastanium/2
+      ]
+      fluids: [
+        ruika-space-station-plasma-gas/0.5
+      ]
+    }
+    output: {
+      items: [
+        ruika-space-station-adv-matter-bin/1
+      ]
+    }
+    craftTime: 120.0
+  }
+]
+requirements: [
+  titanium/200,
+  plastanium/50,
+  plasma-sheet/100,
+  ruika-space-station-capacitor/50
+  ruika-space-station-matter-bin/100
+]
